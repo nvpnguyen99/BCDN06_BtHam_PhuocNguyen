@@ -1,3 +1,20 @@
+/**
+ * Mô hình 3 khối
+ * Khối 1: Input
+ *      mark1, mark2, mark3, benchMark, select khuVuc, select
+ * Khối 2: Các bước xử lý
+ *    tính kết quả tuyển sinh
+ *          + lấy dữ liệu từ form
+ *          + tính điểm ưu tiên theo khu vực
+ *          + tính điểm ưu tiên theo đối tượng
+ *          + tính tổng điểm
+ *              tongDiem = mark1 + mark2 + mark3 + diemKhuVuc + diemDoiTuong
+ *          + so sánh tổng điểm với điểm chuẩn
+ *          + hiển thị kết quả lên UI                                                                        
+ * Khối 3: Output
+ *      kết quả tuyển sinh 
+ */
+
 function tinhKetQuaTuyenSinh() {
     var mark1 = document.getElementById("mark1").value;
     var mark2 = document.getElementById("mark2").value;
